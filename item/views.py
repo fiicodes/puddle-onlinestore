@@ -68,7 +68,7 @@ def edit(request,pk):
 
             item.save()
             return redirect('item:detail',pk=item.id)
-        else:
+    else:
 
 
              form=EditItemForm(instance=item)
